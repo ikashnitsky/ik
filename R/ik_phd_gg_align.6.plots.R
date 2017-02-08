@@ -7,7 +7,8 @@
 ################################################################################
 
 
-ik_phd_gg_align.6.plots <- function(list.plots, labels=LETTERS[1:6],labels.size=8){
+ik_phd_gg_align.6.plots <- function(list.plots, family = "",
+                                    labels=LETTERS[1:6], labels.size=8){
 
         require(tidyverse)
         require(gridExtra)
@@ -68,7 +69,7 @@ ik_phd_gg_align.6.plots <- function(list.plots, labels=LETTERS[1:6],labels.size=
         gg <- gg + annotate('text',label = labels,
                             x=c(.5,12.5,12.5,.5,.5,12.5)+.5,
                             y=c(29,27.5,18.5,17,8,8)+.1,
-                            size=labels.size,hjust=0, vjust=0)
+                            size=labels.size,hjust=0, vjust=0, family = family)
 
         return(gg)
 }
