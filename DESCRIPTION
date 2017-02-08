@@ -1,0 +1,10 @@
+Package: ik
+Type: Package
+Title: Just a set of my own functions
+Version: 0.1
+Date: 2015-07-14
+Author: Ilya Kashnitsky
+Maintainer: Ilya Kashnitsky <ilya.kashnitsky@gmail.com>
+Description: ...
+License: GN-2
+LazyData: TRUE
